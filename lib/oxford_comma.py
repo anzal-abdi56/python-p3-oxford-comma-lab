@@ -1,10 +1,10 @@
-def oxford_comma(elements):
-    if len(elements) == 0:
+def oxford_comma(items):
+    if len(items) == 0:
         return ""
-    elif len(elements) == 1:
-        return elements[0]
-    elif len(elements) == 2:
-        return f"{elements[0]} and {elements[1]}"
+    elif len(items) == 1:
+        return items[0]
+    elif len(items) == 2:
+        return f"{items[0]} and {items[1]}"
     else:
         # Join all elements with commas and add "and" before the last element
-        return f"{', '.join(elements[:-1])}, and {elements[-1]}"
+        return f"{', '.join(items[:-1])}, and {items[-1]}"
